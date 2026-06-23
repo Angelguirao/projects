@@ -1,0 +1,24 @@
+# Sibling repos — sovereign git checkouts beside this meta-repo.
+# Clone separately: docs/CLONE-ALL.md
+/brain/
+/library/
+/money/
+/lab/
+/tbd/
+/holzen/
+/auto/
+/personal-agent/
+
+# Legacy LifeOS clones — each has its own GitHub repo.
+/legacy/LifeOS-Protocol/
+/legacy/LifeOS-Core/
+/legacy/LifeOS-plugin-sdk/
+/legacy/LifeOS-Premium/
+
+# Cursor / agent workspace (local)
+.agents/
+skills-lock.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
