@@ -7,6 +7,7 @@ A sibling workspace of eight repos — **know**, **show**, **ship**, **run**, **
 They share a parent folder but stay sovereign: no monorepo, no shared package. Cross-links are explicit (`../brain`, `../holzen`, venture YAML pointers, optional `tbd/brain` submodule for deploy).
 
 **Boundaries (read this first):** [brain/BOUNDARIES.md](brain/BOUNDARIES.md)  
+**Stack vision (LifeOS 2.0):** [docs/VISION.md](docs/VISION.md)  
 **Prior LifeOS repos (legacy):** [LEGACY.md](LEGACY.md)  
 **Epistemic evolution (vision + OSS):** [lab/domains/ARCHITECTURE.md](lab/domains/ARCHITECTURE.md)  
 **AI engineering plays:** [lab/docs/AI-ENGINEERING.md](lab/docs/AI-ENGINEERING.md)  
@@ -316,6 +317,7 @@ projects/                    ← this meta-repo (README, LEGACY, docs/)
 ├── README.md
 ├── LEGACY.md
 ├── docs/
+│   ├── VISION.md            ← LifeOS 2.0 + creative loop
 │   └── CLONE-ALL.md         ← fresh machine checklist
 ├── legacy/
 │   └── README.md            ← index only; LifeOS clones gitignored locally
