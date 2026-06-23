@@ -49,6 +49,7 @@ An earlier line of work (**LifeOS**) tried to be personal AI + life memory + liv
 | [**LifeOS-Protocol/**](legacy/LifeOS-Protocol/README.md) | archived | `LifeEvent` schema, `life://` URIs — superseded by brain for knowledge |
 | [**LifeOS-Core/**](legacy/LifeOS-Core/README.md) | archived | Self-hosted life timeline — don't run parallel with brain |
 | [**LifeOS-plugin-sdk/**](legacy/LifeOS-plugin-sdk/README.md) | archived | Plugin SDK (Spotify, Obsidian) — mine patterns via lab if needed |
+| [**LifeOS-Premium/**](legacy/LifeOS-Premium/README.md) | archived | Hosted AI orchestration SaaS — personal agent vision → OpenClaw now |
 
 → Full overlap analysis: [LEGACY.md](LEGACY.md) · [legacy/README.md](legacy/README.md)
 

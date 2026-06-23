@@ -9,6 +9,7 @@ Prior work in [`legacy/`](legacy/). **Not part of the active stack** unless you 
 | [legacy/LifeOS-Protocol/](legacy/LifeOS-Protocol/) | `Angelguirao/LifeOS-Protocol` | Open schema — `LifeEvent`, `life://` URIs |
 | [legacy/LifeOS-Core/](legacy/LifeOS-Core/) | `Angelguirao/LifeOS-Core` | Self-hosted app — timeline, events, manual plugins |
 | [legacy/LifeOS-plugin-sdk/](legacy/LifeOS-plugin-sdk/) | `Angelguirao/LifeOS-plugin-sdk` | Plugin SDK — Spotify, Obsidian, marketplace stubs |
+| [legacy/LifeOS-Premium/](legacy/LifeOS-Premium/) | `Angelguirao/LifeOS-Premium` | Hosted SaaS — AI orchestration, connectors, cloud dashboard (commercial) |
 
 These are **your products**, not lab play clones.
 
@@ -26,6 +27,9 @@ These are **your products**, not lab play clones.
 | Plugin / auto-sync | `auto/` dispatch, `ingest.yaml` | Automation | auto is governance; LifeOS plugins are integrations |
 | Spotify / mood events | — | Life telemetry | **Out of scope** unless you care |
 | Local SQLite/JSON store | git + markdown | Storage philosophy | **brain's md-first is the spine** |
+| Premium SaaS orchestration | `personal-agent/` OpenClaw | Personal AI assistant | **OpenClaw won** — don't revive Premium dashboard |
+| Multi-agent coordinator (LangGraph) | `auto/` dispatch, Claw skills | Agent orchestration | Mine patterns → lab; auto governs ventures |
+| Connectors (GitHub, Notion, Linear, Figma) | Claw skills, auto plugins | Integrations | Salvage as skills, not a second connector manager |
 | Premium / marketplace (SDK README) | holzen product | Product | holzen is the venture; LifeOS Premium is a different product line |
 
 ### Short answer
@@ -39,7 +43,7 @@ These are **your products**, not lab play clones.
 
 | Action | Repos |
 |--------|-------|
-| **Keep on GitHub** | All three — your history and IP |
+| **Keep on GitHub** | All four LifeOS repos — your history and IP |
 | **Don't actively develop** | Unless you choose to *revive LifeOS as a product* instead of brain |
 | **Local copy** | `legacy/` (moved 2026-06-21) |
 | **Mine, don't merge** | Obsidian plugin, URI linking ideas, plugin registry patterns → lab/adapt notes |
@@ -77,6 +81,8 @@ See [lab/catalog.yaml](lab/catalog.yaml) entries `lifeos-*`.
 | plugin-sdk | Obsidian sync patterns | lab/adapt/obsidian-lifeos-notes |
 | Core | Timeline React components | tbd or brain UI Phase 4 — only after spec |
 | Core | Event import/export | brain/raw ingest adapter |
+| Premium | Connector interface pattern | Claw skills or auto runtime adapters |
+| Premium | Multi-repo orchestrator | lab study only — auto + personal-agent own dispatch now |
 
 Log mining in [lab/domains/lifeos.md](lab/domains/lifeos.md).
 
@@ -97,5 +103,6 @@ Log mining in [lab/domains/lifeos.md](lab/domains/lifeos.md).
 |------|----------|
 | 2026-06-21 | Documented as **legacy**; active stack = brain + library + money + lab + tbd + holzen + auto |
 | 2026-06-21 | Moved to `legacy/` folder |
+| 2026-06-22 | Added **LifeOS-Premium** to legacy index; personal AI → OpenClaw / personal-agent |
 
 Update this table if you revive LifeOS or delete local copies.

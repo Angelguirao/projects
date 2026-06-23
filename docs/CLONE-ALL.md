@@ -56,6 +56,7 @@ mkdir legacy -Force
 git clone https://github.com/Angelguirao/LifeOS-Protocol.git  legacy\LifeOS-Protocol
 git clone https://github.com/Angelguirao/LifeOS-Core.git        legacy\LifeOS-Core
 git clone https://github.com/Angelguirao/LifeOS-plugin-sdk.git  legacy\LifeOS-plugin-sdk
+git clone https://github.com/Angelguirao/LifeOS-Premium.git     legacy\LifeOS-Premium
 ```
 
 ## 4. First-run pointers
