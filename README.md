@@ -8,6 +8,7 @@ They share a parent folder but stay sovereign: no monorepo, no shared package. C
 
 **Boundaries (read this first):** [brain/BOUNDARIES.md](brain/BOUNDARIES.md)  
 **Stack vision (LifeOS 2.0):** [docs/VISION.md](docs/VISION.md)  
+**OSS contribution strategy (80k × personal):** [docs/OSS-STRATEGY.md](docs/OSS-STRATEGY.md)  
 **Prior LifeOS repos (legacy):** [LEGACY.md](LEGACY.md)  
 **Epistemic evolution (vision + OSS):** [lab/domains/ARCHITECTURE.md](lab/domains/ARCHITECTURE.md)  
 **AI engineering plays:** [lab/docs/AI-ENGINEERING.md](lab/docs/AI-ENGINEERING.md)  
