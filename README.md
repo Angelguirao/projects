@@ -2,7 +2,7 @@
 
 **This repo** is the thin meta-map for Angel's sibling workspace — vision, diagrams, `LEGACY.md`. It does **not** contain sibling code; clone those separately → [docs/CLONE-ALL.md](docs/CLONE-ALL.md).
 
-A sibling workspace of eight repos — **know**, **show**, **ship**, **run**, **read**, **play**, **money**, and **agent**.
+A sibling workspace of nine repos — **know**, **show**, **ship**, **run**, **ventures**, **read**, **play**, **money**, and **agent**.
 
 They share a parent folder but stay sovereign: no monorepo, no shared package. Cross-links are explicit (`../brain`, `../holzen`, venture YAML pointers, optional `tbd/brain` submodule for deploy).
 
@@ -24,7 +24,7 @@ An earlier line of work (**LifeOS**) tried to be personal AI + life memory + liv
 | Always-on personal AI (Premium) | [**personal-agent/**](personal-agent/README.md) — OpenClaw (Claw) on Telegram / channels |
 | Life memory & knowledge | [**brain/**](brain/README.md) — md-first wiki, search, compile |
 | Living / felt dashboard | [**tbd/**](tbd/README.md) — exhibition mesh + footnotes |
-| Integrations (Obsidian, Spotify…) | **Skills** on Claw, **jobs** in auto, **experiments** in lab — not a second PluginManager |
+| Integrations (Obsidian, Spotify…) | **Skills** on Claw, **jobs** in dispatch, **experiments** in lab — not a second PluginManager |
 | Structured `life://` events | Optional bridge → `brain/raw/` or Claw `memory/` — not LifeOS Core SQLite |
 
 **Compose OSS, own the glue.** lab proves; siblings keep what ships. See [LEGACY.md](LEGACY.md) for what not to revive as a parallel app.
@@ -84,7 +84,8 @@ flowchart TB
   end
 
   subgraph run["Run & ship"]
-    AUTO[auto/]
+    DISP[dispatch/]
+    VB[venture-builder/]
     HOL[holzen/]
   end
 
@@ -106,8 +107,9 @@ flowchart TB
   PA --> CLAW
   CLAW -->|brain skill| BR
   CLAW -->|memory / routing| BR
-  AUTO -->|webhooks| CLAW
-  AUTO -->|venture cycles| HOL
+  DISP -->|webhooks| CLAW
+  VB -->|venture YAML| DISP
+  DISP -->|venture cycles| HOL
   LAB -->|promote| BR
   LAB -->|promote| TBD
   LAB -->|promote| PA
@@ -137,15 +139,17 @@ flowchart TB
          └── search / ask ◄── brain skill ── personal-agent/ (Claw)
                                     ▲
   Telegram / channels ── OpenClaw gateway ──┘
-  auto ──webhook /hooks/agent──►     │
+  dispatch ──webhook /hooks/agent──►     │
          │                           │
          ├── dispatch ──► holzen/    └── memory/, cron, morning brief
          └── plugins/runtimes/ (Cursor, Claude, OpenClaw, …)
 
+  venture-builder/  ──ventures/*.yaml──►  dispatch
+
   money/  ── compose, regtest, runbooks (vendor pins — not brain prose)
          └── theory notes ──compile──► brain/wiki/
 
-  lab/play + lab/adapt  ──promote──►  brain | library | tbd | holzen | auto | personal-agent
+  lab/play + lab/adapt  ──promote──►  brain | library | tbd | holzen | dispatch | personal-agent
          └── openclaw/, bitcoin-core/, …  (read clones; don't deploy from lab)
 
   legacy/LifeOS-*  ──X──►  do NOT run parallel with brain
@@ -161,11 +165,12 @@ flowchart TB
 | Exhibition mesh | `tbd` → `/` | Visitors |
 | Personal agent | Claw → Telegram; gateway :18789 | You |
 | Product app | `holzen` → `holzen.app` | Users |
-| Control plane | `auto` → dashboard (:3847) | You |
+| Control plane | `dispatch` → dashboard (:3847) | You |
+| Venture governance | `venture-builder` → YAML, gates, constitution | You |
 | Money stack (local) | `money` → Docker compose / regtest | You |
 | OSS experiments | `lab/play/*` | You (disposable) |
 
-**Layer model (auto internals):** [auto/docs/LAYERS.md](auto/docs/LAYERS.md) — Layers 0–2 (models, pipeline, runtimes) support Layer 3 (auto), which governs Layer 4 (ventures like holzen).
+**Layer model (dispatch internals):** [dispatch/docs/LAYERS.md](dispatch/docs/LAYERS.md) — Layers 0–2 (models, pipeline, runtimes) support Layer 3 (dispatch), which reads Layer 4 venture config from **venture-builder** (holzen, tbd, future).
 
 ## Quick start
 
@@ -181,7 +186,8 @@ flowchart TB
 | Preview public footnotes locally | `cd brain` → `npm run publish` then `npm run preview` |
 | Open mesh / exhibit a concept | `cd tbd` → [tbd/README.md](tbd/README.md) |
 | Run or ship the pause app | `cd holzen` → [holzen/README.md](holzen/README.md) |
-| Dispatch maintainer cycles | `cd auto` → [auto/README.md](auto/README.md) |
+| Dispatch maintainer cycles | `cd dispatch` → [dispatch/README.md](dispatch/README.md) |
+| Venture YAML / gates | `cd venture-builder` → [venture-builder/README.md](venture-builder/README.md) |
 | Try OSS before committing to a sibling | `cd lab` → [lab/README.md](lab/README.md) |
 | Run local Bitcoin regtest stack | `cd money` → [money/docs/REGTEST.md](money/docs/REGTEST.md) |
 
@@ -194,7 +200,7 @@ flowchart TB
 | tbd (mesh) | `npm run dev` | http://localhost:3000 |
 | tbd (footnotes, after publish) | `npm run brain:publish` then dev | http://localhost:3000/wiki |
 | holzen | `npm run dev` | http://localhost:8080 |
-| auto | `npm run dev` | http://localhost:3847 |
+| dispatch | `npm run dev` | http://localhost:3847 |
 | OpenClaw gateway | `lab/play/openclaw/scripts/resume-openclaw.ps1` | http://127.0.0.1:18789 |
 
 ## Where does this go?
@@ -211,7 +217,8 @@ Daily agent log / life capture?      → personal-agent/openclaw/memory/
 Agent identity & skills?             → personal-agent/openclaw/
 OpenClaw runtime config & secrets?   → ~/.openclaw/  (not git)
 Maintainer cycle summary?            → {venture}/.auto/
-Job record, gate, or schedule?       → auto/state/
+Job record, gate, or schedule?       → dispatch/state/
+Venture identity, phase, policy?     → venture-builder/ventures/
 Product code, migrations, edge fns?  → holzen/
 Product docs and runbooks?           → holzen/docs/
 Calibre compose, OPDS, backup?       → library/
@@ -248,16 +255,16 @@ Mesh at `/` · footnotes at `/wiki` · same deployment.
 
 Details: [tbd/README.md#deploy-vercel](tbd/README.md)
 
-### auto → holzen (maintainer cycle)
+### dispatch → holzen (maintainer cycle)
 
-1. Venture in `auto/ventures/holzen.yaml` → `../holzen`
-2. `POST /api/ventures/holzen/run` or schedule via auto dashboard
+1. Venture in `venture-builder/ventures/holzen.yaml` → `../holzen`
+2. `POST /api/ventures/holzen/run` or schedule via dispatch dashboard
 3. Agent runs in holzen checkout; memory lands in `holzen/.auto/`
 
-### auto → Claw (personal agent dispatch)
+### dispatch → Claw (personal agent dispatch)
 
 1. Hooks wired in `~/.openclaw/openclaw.json` — see `lab/play/openclaw/scripts/setup-openclaw-stack.ps1`
-2. `auto/.env` holds `OPENCLAW_HOOKS_TOKEN` + gateway URL
+2. `dispatch/.env` holds `OPENCLAW_HOOKS_TOKEN` + gateway URL
 3. Smoke test: `lab/play/openclaw/scripts/test-auto-hook.ps1`
 
 ### library → brain (books)
@@ -275,7 +282,7 @@ Details: [tbd/README.md#deploy-vercel](tbd/README.md)
 ### lab → siblings (promotion)
 
 ```
-lab/play + lab/adapt  ──promote──►  brain | library | tbd | holzen | auto | personal-agent
+lab/play + lab/adapt  ──promote──►  brain | library | tbd | holzen | dispatch | personal-agent
 ```
 
 Catalog: [lab/catalog.yaml](lab/catalog.yaml). OpenClaw study clone: [lab/play/openclaw/](lab/play/openclaw/).
@@ -308,7 +315,8 @@ Configure automation in `ingest.yaml` (`auto_compile`, `auto_push`, `poll_second
 | brain | [brain/AGENTS.md](brain/AGENTS.md) |
 | tbd | [tbd/AGENTS.md](tbd/AGENTS.md) |
 | personal-agent | [personal-agent/openclaw/AGENTS.md](personal-agent/openclaw/AGENTS.md) |
-| auto | [auto/docs/LAYERS.md](auto/docs/LAYERS.md), [auto/schema/README.md](auto/schema/README.md) |
+| dispatch | [dispatch/docs/LAYERS.md](dispatch/docs/LAYERS.md) |
+| venture-builder | [venture-builder/README.md](venture-builder/README.md), [venture-builder/schema/README.md](venture-builder/schema/README.md) |
 | holzen | [holzen/docs/README.md](holzen/docs/README.md) |
 | lab | [lab/README.md](lab/README.md), per-play `NOTES.md` |
 
@@ -329,7 +337,8 @@ projects/                    ← this meta-repo (README, LEGACY, docs/)
 ├── lab/
 ├── tbd/
 ├── holzen/
-├── auto/
+├── dispatch/
+├── venture-builder/
 └── personal-agent/
 ```
 

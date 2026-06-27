@@ -17,7 +17,7 @@ The pivot is not abandonment — it is **correct ownership**:
 | How it feels in public | **tbd** | mesh `/`, footnotes `/wiki` |
 | What you read | **library** | Calibre → brain stubs |
 | What you ship | **holzen** | product, users, billing |
-| How ventures get work | **auto** | gates, dispatch, webhooks |
+| How ventures get work | **dispatch** + **venture-builder** | gates, dispatch, webhooks |
 | OSS experiments | **lab** | play → promote |
 | Money infra | **money** | compose, runbooks |
 
@@ -56,7 +56,7 @@ flowchart LR
 - **OpenClaw** = product for personal agent (npm global + your workspace)
 - **lab/play/openclaw** = textbook clone, scripts, notes — not what you deploy
 - **Skills** = glue (`brain`, `capture`) — markdown wrappers over sibling repos
-- **Hooks** = auto → Claw without Telegram
+- **Hooks** = dispatch → Claw without Telegram
 
 ## Anti-patterns
 

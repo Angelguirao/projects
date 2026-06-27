@@ -14,4 +14,4 @@ Prior product repos — **archived**, not part of the active stack.
 
 Each repo may have a `STATUS.md` at its root (e.g. [LifeOS-Core/STATUS.md](LifeOS-Core/STATUS.md), [LifeOS-Premium/STATUS.md](LifeOS-Premium/STATUS.md)).
 
-**Active stack:** brain, library, money, lab, tbd, holzen, auto, personal-agent — see [../README.md](../README.md).
+**Active stack:** brain, library, money, lab, tbd, holzen, dispatch, venture-builder, personal-agent — see [../README.md](../README.md).
