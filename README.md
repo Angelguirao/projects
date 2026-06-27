@@ -40,7 +40,8 @@ An earlier line of work (**LifeOS**) tried to be personal AI + life memory + liv
 | [**money/**](money/README.md) | Money | What you run — node compose, vendor pins, runbooks |
 | [**tbd/**](tbd/README.md) | Exhibition | How you show it — mesh at `/`, footnotes at `/wiki` |
 | [**holzen/**](holzen/README.md) | Product | What you ship — investor pause app (`holzen.app`), users, billing |
-| [**auto/**](auto/README.md) | Operational | How work gets done — governed jobs, gates, dispatch |
+| [**dispatch/**](dispatch/README.md) | Execution | Job → runtime plugins (Cursor, OpenClaw hooks) |
+| [**venture-builder/**](venture-builder/README.md) | Ventures | All product ventures — holzen, tbd, future |
 | [**lab/**](lab/README.md) | Playground | OSS trials — play, adapt, promote into siblings |
 | [**personal-agent/**](personal-agent/README.md) | Agent | OpenClaw workspace + VPS deploy — always-on assistant (Claw) |
 

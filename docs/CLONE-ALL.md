@@ -16,7 +16,8 @@ C:\Users\angel\projects\     ← meta-repo root AND sibling parent
 ├── lab/
 ├── tbd/
 ├── holzen/
-├── auto/
+├── dispatch/              ← was auto — job → runtime plugins
+├── venture-builder/       ← all venture YAML + gates
 └── personal-agent/
 ```
 
@@ -41,7 +42,8 @@ git clone https://github.com/Angelguirao/money.git
 git clone https://github.com/Angelguirao/lab.git
 git clone https://github.com/Angelguirao/tbd.git
 git clone https://github.com/Angelguirao/holzen.git
-git clone https://github.com/Angelguirao/auto.git
+git clone https://github.com/Angelguirao/dispatch.git
+git clone https://github.com/Angelguirao/venture-builder.git
 git clone https://github.com/Angelguirao/personal-agent.git
 ```
 
