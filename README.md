@@ -1,45 +1,116 @@
-# projects
+# Stack map
 
-**Meta-map** for a sibling workspace of nine repos. This repo holds vision, diagrams, and clone docs — not application code. Clone siblings separately → [docs/CLONE-ALL.md](docs/CLONE-ALL.md).
+**A multi-repo personal stack for knowing clearly, deciding with judgment intact, and building in public where it earns it.**
 
-**On the mesh (tbd):** `/?room=problems` · `/?room=projects` · footnotes at `/wiki`
+Not a monorepo — nine sibling repos, explicit seams, glue you own. This repository is the **map**: architecture, problem framing, and how to clone the workspace. Application code lives in the siblings.
 
-**Thesis:** compose mature OSS; own the glue. No monorepo — explicit seams between repos.
+| Surface | Link | What you'll see |
+|---------|------|-----------------|
+| **Mesh** | [tbd-delta.vercel.app](https://tbd-delta.vercel.app/) | Felt rooms — problems, identity, projects, connection |
+| **Footnotes** | [tbd-delta.vercel.app/wiki](https://tbd-delta.vercel.app/wiki) | Readable concepts distilled from reading (Socratic + systems thinking) |
+| **Holzen** | [holzen.app](https://holzen.app) | Shipped product — pause-first ritual before capital moves |
+| **This repo** | you are here | Stack map, clone guide, vision |
 
-| Doc | What |
-|-----|------|
-| [docs/VISION.md](docs/VISION.md) | Stack vision, creative loop |
-| [docs/OSS-STRATEGY.md](docs/OSS-STRATEGY.md) | 80k × personal fit × upstream vs build |
-| [brain/BOUNDARIES.md](brain/BOUNDARIES.md) | What lives where (read first) |
-| [LEGACY.md](LEGACY.md) | Prior LifeOS work — mine, don't revive |
+On the mesh: [`/?room=problems`](https://tbd-delta.vercel.app/?room=problems) · [`/?room=projects`](https://tbd-delta.vercel.app/?room=projects)
 
-## Problems → projects
+---
 
-Start with **why** ([problems room](https://github.com/Angelguirao/tbd)) — then **what** (below). Not a priority ranking; each project is tagged with the problem(s) it serves.
+## Thesis
 
-Nearly everything is **private** today. **Holzen** is public at [holzen.app](https://holzen.app).
+**Compose mature open source. Own the glue.**
 
-| Problem | Projects |
-|---------|----------|
-| Power-seeking AI | **bench** (`lab`) |
-| Extreme power concentration | **anchor** (`money`), **bench** |
-| AI-enhanced decision making | **steward**, **folio**, **codex**, **tbd**, **holzen** |
+- **Problems** (macro) → **projects** (repos) — not a priority ranking; each repo is tagged with the problem(s) it serves.
+- **Capture → distill → exhibit** — clips and notes become wiki concepts; some become mesh rooms; agents route attention, they don't replace craft.
+- **Private by default, public when earned** — most repos are still private while I work. Holzen is live; footnotes and mesh are public; this map is public so the architecture is legible.
 
-**Stack plumbing** (no macro-problem tag): **relay** (`dispatch`), **charter** (`venture-builder`).
+---
 
 ## The stack
 
-| Name | Folder | Role | Status | Visibility |
-|------|--------|------|--------|------------|
-| **folio** | `brain/` | second brain | **active** | private |
-| **codex** | `library/` | reading | building | private |
-| **tbd** | `tbd/` | exhibition | **active** | private |
-| **steward** | `personal-agent/` | life agent | **active** | private |
-| **holzen** | `holzen/` | pause ritual | **active** | [public](https://holzen.app) |
-| **relay** | `dispatch/` | automation | building | private |
-| **charter** | `venture-builder/` | venture rules | building | private |
-| **bench** | `lab/` | experiments | **active** | private |
-| **anchor** | `money/` | bitcoin | building | private |
+Product names are what I call them day to day. Folder names are the git repos on disk.
+
+| Name | Repo | Role | Status | Public |
+|------|------|------|--------|--------|
+| **folio** | [`brain`](https://github.com/Angelguirao/brain) | Second brain — capture, compile, footnotes | active | footnotes only |
+| **codex** | [`library`](https://github.com/Angelguirao/library) | Reading — Calibre, books → raw ingest | building | — |
+| **tbd** | [`tbd`](https://github.com/Angelguirao/tbd) | Exhibition — this mesh + `/wiki` | active | [mesh](https://tbd-delta.vercel.app/) |
+| **steward** | [`personal-agent`](https://github.com/Angelguirao/personal-agent) | Life agent — OpenClaw, memory, routing | active | — |
+| **holzen** | [`holzen`](https://github.com/Angelguirao/holzen) | Pause ritual — deliberate friction before money moves | active | [holzen.app](https://holzen.app) |
+| **relay** | [`dispatch`](https://github.com/Angelguirao/dispatch) | Automation — webhooks, cycles, background jobs | building | — |
+| **charter** | [`venture-builder`](https://github.com/Angelguirao/venture-builder) | Venture rules — gates, templates, what ships | building | repo public |
+| **bench** | [`lab`](https://github.com/Angelguirao/lab) | Experiments — OSS trials before they graduate | active | — |
+| **anchor** | [`money`](https://github.com/Angelguirao/money) | Bitcoin — compose, regtest, runbooks | building | — |
+
+**Stack plumbing** (no macro-problem tag): **relay**, **charter** — they connect the rest.
+
+---
+
+## Problems → projects
+
+Informed by [80,000 Hours problem profiles](https://80000hours.org/problem-profiles/), but not a ranked hit list. I care holistically; these three are where **open source + code** is my honest lever.
+
+| Problem | Projects |
+|---------|----------|
+| **Power-seeking AI** | **bench** — evals, monitoring, agent tooling; contribute upstream when maintainers welcome it |
+| **Extreme power concentration** | **anchor**, **bench** — inspectable money and comms; compose, don't fork-the-world |
+| **AI-enhanced decision making** | **folio**, **codex**, **steward**, **tbd**, **holzen** — tools you own for knowing and deciding without outsourcing judgment |
+
+Start from **why** on the mesh ([problems room](https://tbd-delta.vercel.app/?room=problems)), then **what** ([projects room](https://tbd-delta.vercel.app/?room=projects)).
+
+---
+
+## How it connects
+
+```mermaid
+flowchart LR
+  LIB[codex / library] --> BR[folio / brain]
+  BR --> TBD[tbd mesh + wiki]
+  BR --> PA[steward / personal-agent]
+  PA --> BR
+  LAB[bench / lab] --> BR
+  LAB --> PA
+  VB[charter / venture-builder] --> DISP[relay / dispatch]
+  DISP --> HOL[holzen]
+  MON[anchor / money] --> BR
+```
+
+**Creative loop:** capture → **folio** (what's true enough) → **tbd** (how it feels in public) → **steward** routes attention. **bench** proves; siblings keep what ships.
+
+<details>
+<summary>Data paths (operator detail)</summary>
+
+```
+Calibre → library/ ──sync──► brain/raw/books/
+Obsidian / clips ───────────► brain/raw/articles/
+brain/wiki/ ──publish──► tbd /wiki
+brain/exhibits.yaml ──sync──► tbd mesh rooms
+Telegram → OpenClaw → personal-agent/ ──brain skill──► brain
+venture-builder/ ──YAML──► dispatch/ ──cycles──► holzen/
+money/ compose + runbooks
+lab/play ──promote──► brain | tbd | personal-agent | holzen | …
+```
+
+</details>
+
+---
+
+## What to read next
+
+| Audience | Start here |
+|----------|------------|
+| **Visitor** | [Mesh](https://tbd-delta.vercel.app/) → [Footnotes](https://tbd-delta.vercel.app/wiki) → [Holzen](https://holzen.app) |
+| **Collaborator** | [Clone the workspace](docs/CLONE-ALL.md) → sibling repo READMEs |
+| **Operator / agent** | [brain/BOUNDARIES.md](brain/BOUNDARIES.md) · [docs/VISION.md](docs/VISION.md) |
+
+| Doc | What |
+|-----|------|
+| [docs/VISION.md](docs/VISION.md) | Constitution — LifeOS pivot, creative loop, anti-patterns |
+| [docs/OSS-STRATEGY.md](docs/OSS-STRATEGY.md) | 80k × personal fit × upstream vs build |
+| [docs/CLONE-ALL.md](docs/CLONE-ALL.md) | Fresh machine — clone parent + all siblings |
+| [LEGACY.md](LEGACY.md) | Prior LifeOS work — mine, don't revive |
+| [brain/BOUNDARIES.md](brain/BOUNDARIES.md) | What lives in which repo |
+
+---
 
 ## Archive
 
@@ -49,117 +120,30 @@ Not in the active stack — prior ventures kept for history.
 |------|------|------|
 | **Lawers** | Litigation finance marketplace — Spain's first online litigation-funding platform | 2017–2019 · inactive |
 
-Legacy LifeOS clones: [legacy/](legacy/README.md) — read only; see [LEGACY.md](LEGACY.md).
-
-## How they connect
-
-```mermaid
-flowchart LR
-  LIB[library] --> BR[brain]
-  BR --> TBD[tbd /wiki]
-  BR --> PA[personal-agent]
-  PA --> BR
-  LAB[lab] --> BR
-  LAB --> PA
-  VB[venture-builder] --> DISP[dispatch]
-  DISP --> HOL[holzen]
-  MON[money] --> BR
-```
-
-**Creative loop:** capture → **brain** (what's true enough) → **tbd** (how it feels) → **Claw** routes attention. **lab** proves; siblings keep what ships.
-
-<details>
-<summary>ASCII data paths (detail)</summary>
-
-```
-  Calibre → library/ ──sync──► brain/raw/books/
-  Obsidian / clips ───────────► brain/raw/articles/
-  brain/wiki/ ──publish──► tbd /wiki
-  brain/exhibits.yaml ──sync──► tbd mesh rooms
-  Telegram → OpenClaw → personal-agent/ ──brain skill──► brain
-  venture-builder/ ──YAML──► dispatch/ ──cycles──► holzen/
-  money/ compose + runbooks (vendor pins — not wiki prose)
-  lab/play ──promote──► brain | tbd | personal-agent | holzen | …
-```
-
-</details>
-
-## Quick start
-
-| If you want to… | Go here |
-|-----------------|---------|
-| Open the mesh | `cd tbd && npm run dev` → http://localhost:3000 |
-| Clip → compile → wiki | [brain/docs/CI.md](brain/docs/CI.md) |
-| Talk to Claw | Telegram · or `lab/play/openclaw/scripts/resume-openclaw.ps1` |
-| Search / ask the wiki | `cd brain` → [brain/README.md](brain/README.md) |
-| Ship holzen | `cd holzen` → [holzen/README.md](holzen/README.md) |
-| Try OSS before committing | `cd lab` → [lab/README.md](lab/README.md) |
-| Bitcoin regtest stack | `cd money` → [money/docs/REGTEST.md](money/docs/REGTEST.md) |
-
-### Dev servers
-
-| Repo | Command | URL |
-|------|---------|-----|
-| tbd (mesh) | `npm run dev` | http://localhost:3000 |
-| brain (reading room) | `npm run ui` | http://127.0.0.1:3920 |
-| brain (footnotes preview) | `npm run preview` | http://127.0.0.1:3922 |
-| holzen | `npm run dev` | http://localhost:8080 |
-| dispatch | `npm run dev` | http://localhost:3847 |
-| OpenClaw gateway | `lab/play/openclaw/scripts/resume-openclaw.ps1` | http://127.0.0.1:18789 |
-
-## Where does this go?
-
-```
-Unprocessed clip?                 → brain/raw/
-Compiled concept?                 → brain/wiki/
-Public footnotes?                 → brain/site/ → tbd /wiki
-Felt mesh scene?                  → tbd/src/ + brain/exhibits.yaml
-Share a room                      → /?room=<slug>
-Agent memory / skills?            → personal-agent/openclaw/
-Venture policy?                   → venture-builder/ventures/
-Product code?                     → holzen/
-OSS trial?                        → lab/play/<name>/
-LifeOS salvage (read only)?       → legacy/ → promote via lab
-```
-
-## Cross-repo workflows
-
-### Clip → wiki → footnotes
-
-1. Clip → `brain/raw/articles/` (Obsidian Git or export)
-2. CI compiles — [brain/docs/CI.md](brain/docs/CI.md)
-3. tbd `prebuild`: sync exhibits + publish footnotes → `/wiki`
-
-### brain → tbd (exhibition)
-
-1. `brain/exhibits.yaml` → `npm run sync-exhibits`
-2. Mesh room in `tbd/src/` · share `/?room=<slug>`
-
-### lab → siblings
-
-```
-lab/play ──promote──► brain | library | tbd | holzen | dispatch | personal-agent
-```
-
-Catalog: [lab/catalog.yaml](lab/catalog.yaml)
-
-## Agent entry points
-
-| Repo | Rules |
-|------|-------|
-| brain | [brain/AGENTS.md](brain/AGENTS.md) |
-| tbd | [tbd/AGENTS.md](tbd/AGENTS.md) |
-| personal-agent | [personal-agent/openclaw/AGENTS.md](personal-agent/openclaw/AGENTS.md) |
-| dispatch | [dispatch/docs/LAYERS.md](dispatch/docs/LAYERS.md) |
-| lab | [lab/README.md](lab/README.md) |
-
-## Anti-patterns
-
-- Wiki prose inside tbd TSX
-- Running LifeOS Core alongside brain — [LEGACY.md](LEGACY.md)
-- Deploying OpenClaw from `lab/play/openclaw/clone/` — use `personal-agent/`
-- Storing venture ops in Claw memory when it belongs in `{venture}/.auto/`
+Legacy LifeOS clones: [legacy/](legacy/README.md) — read only.
 
 ---
 
-Each repo owns its README. **Deep dive:** [docs/VISION.md](docs/VISION.md) · [docs/OSS-STRATEGY.md](docs/OSS-STRATEGY.md) · [docs/CLONE-ALL.md](docs/CLONE-ALL.md) · [lab/docs/CLONE-MATRIX.md](lab/docs/CLONE-MATRIX.md)
+## Quick start (local)
+
+Parent folder holds the meta-repo **and** sibling checkouts side by side ([layout](docs/CLONE-ALL.md)).
+
+| If you want to… | Command |
+|-----------------|---------|
+| Open the mesh | `cd tbd && npm run dev` → http://localhost:3000 |
+| Reading room + compile | `cd brain && npm run ui` · [brain/README.md](brain/README.md) |
+| Ship Holzen | `cd holzen && npm run dev` → http://localhost:8080 |
+| OSS experiments | `cd lab` → [lab/README.md](lab/README.md) |
+
+---
+
+## About
+
+**Angel Guirao** — product-minded full-stack engineer (Madrid). Law/VC → Webel → shipping Holzen and this stack.
+
+- [Mesh](https://tbd-delta.vercel.app/) · [Footnotes](https://tbd-delta.vercel.app/wiki) · [Holzen](https://holzen.app)
+- [LinkedIn](https://linkedin.com/in/angelguirao) · [GitHub](https://github.com/Angelguirao)
+
+---
+
+*Each sibling repo owns its README. This file is the index — update the mesh [projects room](https://tbd-delta.vercel.app/?room=projects) when the stack changes.*
