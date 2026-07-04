@@ -82,6 +82,7 @@ flowchart LR
 ```
 Calibre → library/ ──sync──► brain/raw/books/
 Obsidian / clips ───────────► brain/raw/articles/
+brain/wiki/self/inquiry ──sync──► tbd owner API + mesh (inner path cookie)
 brain/wiki/ ──publish──► tbd /wiki
 brain/exhibits.yaml ──sync──► tbd mesh rooms
 Telegram → OpenClaw → personal-agent/ ──brain skill──► brain
