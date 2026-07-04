@@ -1,157 +1,109 @@
-# Stack map
+# Projects
 
-**A multi-repo personal stack for knowing clearly, deciding with judgment intact, and building in public where it earns it.**
+**Angel Guirao** — product-minded full-stack engineer building tools for **knowing, deciding, and shipping** without outsourcing judgment to platforms or copilots.
 
-Not a monorepo — nine sibling repos, explicit seams, glue you own. This repository is the **map**: architecture, problem framing, and how to clone the workspace. Application code lives in the siblings.
+This repository is the **map**: how my projects relate, what each one owns, and where to look first. Nine sibling repos beside this folder — not a monorepo. **Compose mature open source. Own the glue.**
 
-| Surface | Link | What you'll see |
-|---------|------|-----------------|
+---
+
+## Start here
+
+| | Link | What it is |
+|---|------|------------|
 | **Mesh** | [tbd-delta.vercel.app](https://tbd-delta.vercel.app/) | Felt rooms — problems, identity, projects, connection |
-| **Footnotes** | [tbd-delta.vercel.app/wiki](https://tbd-delta.vercel.app/wiki) | Readable concepts distilled from reading (Socratic + systems thinking) |
-| **Holzen** | [holzen.app](https://holzen.app) | Shipped product — pause-first ritual before capital moves |
-| **This repo** | you are here | Stack map, clone guide, vision |
+| **Footnotes** | [tbd-delta.vercel.app/wiki](https://tbd-delta.vercel.app/wiki) | Concepts from reading, distilled for strangers |
+| **Holzen** | [holzen.app](https://holzen.app) | Shipped product — pause before capital moves |
 
-**Start here as a visitor:** [Mesh](https://tbd-delta.vercel.app/) → [Footnotes](https://tbd-delta.vercel.app/wiki) → [Holzen](https://holzen.app). This repo is the map behind those surfaces.
-
-On the mesh: [`/?room=problems`](https://tbd-delta.vercel.app/?room=problems) · [`/?room=projects`](https://tbd-delta.vercel.app/?room=projects)
+The mesh is how it *feels*. Footnotes are what I *know* in public. Holzen is what I *ship* to users.
 
 ---
 
-## Thesis
+## The through-line
 
-**Compose mature open source. Own the glue.**
-
-- **Problems** (macro) → **projects** (repos) — not a priority ranking; each repo is tagged with the problem(s) it serves.
-- **Capture → distill → exhibit** — clips and notes become wiki concepts; some become mesh rooms; agents route attention, they don't replace craft.
-- **Private by default, public when earned** — visibility is set in folio (`publish`, stack registry), not assumed here.
-
-**Inquiry loop:** Wonder → Propose → Critique → Build → Observe → Revise. Folio owns truth; **steward** routes phases on Telegram and desk; **tbd** exhibits what earns `publish: true`. [docs/INQUIRY.md](docs/INQUIRY.md)
-
----
-
-## The stack
-
-Product names are what I call them day to day. Folder names are the git repos on disk.
-
-| Name | Repo | Role | Status | Public |
-|------|------|------|--------|--------|
-| **folio** | [`brain`](https://github.com/Angelguirao/brain) | Second brain — capture, compile, footnotes | active | footnotes only |
-| **codex** | [`library`](https://github.com/Angelguirao/library) | Reading — Calibre, books → raw ingest | building | — |
-| **tbd** | [`tbd`](https://github.com/Angelguirao/tbd) | Exhibition — this mesh + `/wiki` | active | [mesh](https://tbd-delta.vercel.app/) |
-| **steward** | [`personal-agent`](https://github.com/Angelguirao/personal-agent) | Life agent — OpenClaw, memory, routing, MCP glue (study: [Miessler LifeOS](https://github.com/danielmiessler/LifeOS) in lab) | active | — |
-| **holzen** | [`holzen`](https://github.com/Angelguirao/holzen) | Pause ritual — deliberate friction before money moves | active | [holzen.app](https://holzen.app) |
-| **relay** | [`dispatch`](https://github.com/Angelguirao/dispatch) | Automation — webhooks, cycles, background jobs | building | — |
-| **charter** | [`venture-builder`](https://github.com/Angelguirao/venture-builder) | Venture rules — gates, templates, what ships | building | repo public |
-| **bench** | [`lab`](https://github.com/Angelguirao/lab) | Experiments — OSS trials before they graduate | active | — |
-| **anchor** | [`money`](https://github.com/Angelguirao/money) | Bitcoin — compose, regtest, runbooks | building | — |
-
-*Public column = live surface or shipped read layer — not always the same as GitHub repo visibility.*
-
-**Stack plumbing** (no macro-problem tag): **relay**, **charter** — they connect the rest.
-
----
-
-## Problems → projects
-
-Informed by [80,000 Hours problem profiles](https://80000hours.org/problem-profiles/), but not a ranked hit list. I care holistically; these three are where **open source + code** is my honest lever.
-
-| Problem | Projects |
-|---------|----------|
-| **Power-seeking AI** | **bench** — evals, monitoring, agent tooling; contribute upstream when maintainers welcome it |
-| **Extreme power concentration** | **anchor**, **bench** — inspectable money and comms; compose, don't fork-the-world |
-| **AI-enhanced decision making** | **folio**, **codex**, **steward**, **tbd**, **holzen** — tools you own for knowing and deciding without outsourcing judgment |
-
-Start from **why** on the mesh ([problems room](https://tbd-delta.vercel.app/?room=problems)), then **what** ([projects room](https://tbd-delta.vercel.app/?room=projects)).
-
----
-
-## How it connects
+I read and clip. Ideas compile into a wiki (**folio**). A personal agent (**steward**) routes attention across the day. Selected work becomes exhibition on the mesh (**tbd**). Products that earn users get their own repo (**holzen**). Experiments start in a sandbox (**bench**) and graduate or die. Open source gets composed; the seams between repos are mine.
 
 ```mermaid
-flowchart LR
-  LIB[codex / library] --> BR[folio / brain]
-  BR --> TBD[tbd mesh + wiki]
-  BR --> PA[steward / personal-agent]
-  PA --> BR
-  LAB[bench / lab] --> BR
-  LAB --> PA
-  VB[charter / venture-builder] --> DISP[relay / dispatch]
-  DISP --> HOL[holzen]
-  MON[anchor / money] --> BR
+flowchart TB
+  subgraph know["Knowing"]
+    LIB[codex · library]
+    FOL[folio · brain]
+    LIB --> FOL
+  end
+
+  subgraph decide["Deciding"]
+    ST[steward · personal-agent]
+    FOL <--> ST
+  end
+
+  subgraph show["Showing"]
+    MESH[tbd · mesh + wiki]
+    FOL --> MESH
+  end
+
+  subgraph ship["Shipping"]
+    HOL[holzen]
+    CHR[charter · venture-builder]
+    REL[relay · dispatch]
+    CHR --> REL --> HOL
+  end
+
+  subgraph prove["Proving"]
+    LAB[bench · lab]
+    MON[anchor · money]
+    LAB --> FOL
+    LAB --> ST
+    MON --> FOL
+  end
 ```
 
-**Creative loop:** capture → **folio** (what's true enough) → **tbd** (how it feels in public) → **steward** routes attention. **bench** proves; siblings keep what ships.
-
-<details>
-<summary>Data paths (operator detail)</summary>
-
-```
-Calibre → library/ ──sync──► brain/raw/books/
-Obsidian / clips ───────────► brain/raw/articles/
-brain/wiki/self/inquiry ──sync──► tbd owner API + mesh (inner path cookie)
-brain/wiki/ ──publish──► tbd /wiki
-brain/exhibits.yaml ──sync──► tbd mesh rooms
-Telegram → OpenClaw → personal-agent/ ──brain skill──► brain
-venture-builder/ ──YAML──► dispatch/ ──cycles──► holzen/
-money/ compose + runbooks
-lab/play ──promote──► brain | tbd | personal-agent | holzen | …
-```
-
-</details>
+**Reading in** → **folio** holds what's true enough → **steward** routes the day → **tbd** exhibits what earns visibility → **holzen** (and future ventures) ship to the world. **bench** tries OSS first; **relay** and **charter** connect venture work.
 
 ---
 
-## What to read next
+## The projects
 
-| Audience | Start here |
-|----------|------------|
-| **Visitor** | [Mesh](https://tbd-delta.vercel.app/) → [Footnotes](https://tbd-delta.vercel.app/wiki) → [Holzen](https://holzen.app) |
-| **Collaborator** | [Clone the workspace](docs/CLONE-ALL.md) → sibling repo READMEs |
-| **Operator / agent** | [folio boundaries](https://github.com/Angelguirao/brain/blob/master/BOUNDARIES.md) · [docs/VISION.md](docs/VISION.md) · [docs/INQUIRY.md](docs/INQUIRY.md) |
+Product names are what I call them day to day. Folder names are the git repos.
 
-| Doc | What |
-|-----|------|
-| [docs/VISION.md](docs/VISION.md) | Constitution — LifeOS pivot, creative loop, anti-patterns |
-| [docs/INQUIRY.md](docs/INQUIRY.md) | Inquiry loop, folio visibility, promotion workflow |
-| [docs/OSS-STRATEGY.md](docs/OSS-STRATEGY.md) | 80k × personal fit × upstream vs build |
-| [docs/CLONE-ALL.md](docs/CLONE-ALL.md) | Fresh machine — clone parent + all siblings |
-| [LEGACY.md](LEGACY.md) | Prior LifeOS work — mine, don't revive |
-| [folio/BOUNDARIES.md](https://github.com/Angelguirao/brain/blob/master/BOUNDARIES.md) | What lives in which repo (sibling `brain/`) |
+### Knowing
+
+**folio** · `brain/` · *active*  
+Markdown wiki for what I read and think — capture, search, compile, publish footnotes when an idea is ready to meet the world.
+
+**codex** · `library/` · *building*  
+Home for books and PDFs that feed folio — keep what matters locally, sync the rest into notes.
+
+### Deciding
+
+**steward** · `personal-agent/` · *active*  
+Personal agent on OpenClaw — routes attention across memory, reading, and the day without handing life to a work copilot.
+
+### Showing
+
+**tbd** · `tbd/` · *active* · [mesh →](https://tbd-delta.vercel.app/)  
+This exhibition — felt rooms for problems, identity, and connection; the public layer on top of what folio knows.
+
+### Shipping
+
+**holzen** · `holzen/` · *active* · [holzen.app →](https://holzen.app)  
+Deliberate friction before capital moves — a ritual that keeps investor decisions human-sized.
+
+**charter** · `venture-builder/` · *building*  
+Constitution for side ventures — gates, templates, and rules for what gets built, promoted, or killed.
+
+**relay** · `dispatch/` · *building*  
+Background jobs and webhooks for repeatable work — product cycles, agent maintenance, venture ops.
+
+### Proving
+
+**bench** · `lab/` · *active*  
+Sandbox for open source — Bitcoin tooling, evals, agents, and upstream trials before they graduate into the stack.
+
+**anchor** · `money/` · *building*  
+Self-custody Bitcoin infrastructure — compose, regtest, and runbooks for running my own node.
 
 ---
 
-## Archive
-
-Not in the active stack — prior ventures kept for history.
-
-| Name | What | When |
-|------|------|------|
-| **Lawers** | Litigation finance marketplace — Spain's first online litigation-funding platform | 2017–2019 · inactive |
-
-Legacy LifeOS clones: [legacy/](legacy/README.md) — read only.
-
----
-
-## Quick start (local)
-
-Parent folder holds the meta-repo **and** sibling checkouts side by side ([layout](docs/CLONE-ALL.md)).
-
-| If you want to… | Command |
-|-----------------|---------|
-| Open the mesh | `cd tbd && npm run dev` → http://localhost:3000 |
-| Reading room + compile | `cd brain && npm run ui` · [folio README](https://github.com/Angelguirao/brain/blob/master/README.md) |
-| Ship Holzen | `cd holzen && npm run dev` → http://localhost:8080 |
-| OSS experiments | `cd lab` → [lab README](https://github.com/Angelguirao/lab/blob/master/README.md) |
-
----
-
-## About
-
-**Angel Guirao** — product-minded full-stack engineer (Madrid). Law/VC → Webel → shipping Holzen and this stack.
+## Connect
 
 - [Mesh](https://tbd-delta.vercel.app/) · [Footnotes](https://tbd-delta.vercel.app/wiki) · [Holzen](https://holzen.app)
 - [LinkedIn](https://linkedin.com/in/angelguirao) · [GitHub](https://github.com/Angelguirao)
-
----
-
-*Each sibling repo owns its README. This file is the index — update the mesh [projects room](https://tbd-delta.vercel.app/?room=projects) when the stack changes.*
