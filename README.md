@@ -21,7 +21,7 @@ On the mesh: [`/?room=problems`](https://tbd-delta.vercel.app/?room=problems) ·
 
 - **Problems** (macro) → **projects** (repos) — not a priority ranking; each repo is tagged with the problem(s) it serves.
 - **Capture → distill → exhibit** — clips and notes become wiki concepts; some become mesh rooms; agents route attention, they don't replace craft.
-- **Private by default, public when earned** — most repos are still private while I work. Holzen is live; footnotes and mesh are public; this map is public so the architecture is legible.
+- **Private by default, public when earned** — visibility is set in folio (`publish`, stack registry), not assumed here.
 
 ---
 
