@@ -11,6 +11,8 @@ Not a monorepo — nine sibling repos, explicit seams, glue you own. This reposi
 | **Holzen** | [holzen.app](https://holzen.app) | Shipped product — pause-first ritual before capital moves |
 | **This repo** | you are here | Stack map, clone guide, vision |
 
+**Start here as a visitor:** [Mesh](https://tbd-delta.vercel.app/) → [Footnotes](https://tbd-delta.vercel.app/wiki) → [Holzen](https://holzen.app). This repo is the map behind those surfaces.
+
 On the mesh: [`/?room=problems`](https://tbd-delta.vercel.app/?room=problems) · [`/?room=projects`](https://tbd-delta.vercel.app/?room=projects)
 
 ---
@@ -22,6 +24,8 @@ On the mesh: [`/?room=problems`](https://tbd-delta.vercel.app/?room=problems) ·
 - **Problems** (macro) → **projects** (repos) — not a priority ranking; each repo is tagged with the problem(s) it serves.
 - **Capture → distill → exhibit** — clips and notes become wiki concepts; some become mesh rooms; agents route attention, they don't replace craft.
 - **Private by default, public when earned** — visibility is set in folio (`publish`, stack registry), not assumed here.
+
+**Inquiry loop:** Wonder → Propose → Critique → Build → Observe → Revise. Folio owns truth; **steward** routes phases on Telegram and desk; **tbd** exhibits what earns `publish: true`. [docs/INQUIRY.md](docs/INQUIRY.md)
 
 ---
 
@@ -40,6 +44,8 @@ Product names are what I call them day to day. Folder names are the git repos on
 | **charter** | [`venture-builder`](https://github.com/Angelguirao/venture-builder) | Venture rules — gates, templates, what ships | building | repo public |
 | **bench** | [`lab`](https://github.com/Angelguirao/lab) | Experiments — OSS trials before they graduate | active | — |
 | **anchor** | [`money`](https://github.com/Angelguirao/money) | Bitcoin — compose, regtest, runbooks | building | — |
+
+*Public column = live surface or shipped read layer — not always the same as GitHub repo visibility.*
 
 **Stack plumbing** (no macro-problem tag): **relay**, **charter** — they connect the rest.
 
@@ -101,15 +107,16 @@ lab/play ──promote──► brain | tbd | personal-agent | holzen | …
 |----------|------------|
 | **Visitor** | [Mesh](https://tbd-delta.vercel.app/) → [Footnotes](https://tbd-delta.vercel.app/wiki) → [Holzen](https://holzen.app) |
 | **Collaborator** | [Clone the workspace](docs/CLONE-ALL.md) → sibling repo READMEs |
-| **Operator / agent** | [brain/BOUNDARIES.md](brain/BOUNDARIES.md) · [docs/VISION.md](docs/VISION.md) |
+| **Operator / agent** | [folio boundaries](https://github.com/Angelguirao/brain/blob/master/BOUNDARIES.md) · [docs/VISION.md](docs/VISION.md) · [docs/INQUIRY.md](docs/INQUIRY.md) |
 
 | Doc | What |
 |-----|------|
 | [docs/VISION.md](docs/VISION.md) | Constitution — LifeOS pivot, creative loop, anti-patterns |
+| [docs/INQUIRY.md](docs/INQUIRY.md) | Inquiry loop, folio visibility, promotion workflow |
 | [docs/OSS-STRATEGY.md](docs/OSS-STRATEGY.md) | 80k × personal fit × upstream vs build |
 | [docs/CLONE-ALL.md](docs/CLONE-ALL.md) | Fresh machine — clone parent + all siblings |
 | [LEGACY.md](LEGACY.md) | Prior LifeOS work — mine, don't revive |
-| [brain/BOUNDARIES.md](brain/BOUNDARIES.md) | What lives in which repo |
+| [folio/BOUNDARIES.md](https://github.com/Angelguirao/brain/blob/master/BOUNDARIES.md) | What lives in which repo (sibling `brain/`) |
 
 ---
 
@@ -132,9 +139,9 @@ Parent folder holds the meta-repo **and** sibling checkouts side by side ([layou
 | If you want to… | Command |
 |-----------------|---------|
 | Open the mesh | `cd tbd && npm run dev` → http://localhost:3000 |
-| Reading room + compile | `cd brain && npm run ui` · [brain/README.md](brain/README.md) |
+| Reading room + compile | `cd brain && npm run ui` · [folio README](https://github.com/Angelguirao/brain/blob/master/README.md) |
 | Ship Holzen | `cd holzen && npm run dev` → http://localhost:8080 |
-| OSS experiments | `cd lab` → [lab/README.md](lab/README.md) |
+| OSS experiments | `cd lab` → [lab README](https://github.com/Angelguirao/lab/blob/master/README.md) |
 
 ---
 
