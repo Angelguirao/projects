@@ -34,7 +34,7 @@ Product names are what I call them day to day. Folder names are the git repos on
 | **folio** | [`brain`](https://github.com/Angelguirao/brain) | Second brain — capture, compile, footnotes | active | footnotes only |
 | **codex** | [`library`](https://github.com/Angelguirao/library) | Reading — Calibre, books → raw ingest | building | — |
 | **tbd** | [`tbd`](https://github.com/Angelguirao/tbd) | Exhibition — this mesh + `/wiki` | active | [mesh](https://tbd-delta.vercel.app/) |
-| **steward** | [`personal-agent`](https://github.com/Angelguirao/personal-agent) | Life agent — OpenClaw, memory, routing | active | — |
+| **steward** | [`personal-agent`](https://github.com/Angelguirao/personal-agent) | Life agent — OpenClaw, memory, routing, MCP glue (study: [Miessler LifeOS](https://github.com/danielmiessler/LifeOS) in lab) | active | — |
 | **holzen** | [`holzen`](https://github.com/Angelguirao/holzen) | Pause ritual — deliberate friction before money moves | active | [holzen.app](https://holzen.app) |
 | **relay** | [`dispatch`](https://github.com/Angelguirao/dispatch) | Automation — webhooks, cycles, background jobs | building | — |
 | **charter** | [`venture-builder`](https://github.com/Angelguirao/venture-builder) | Venture rules — gates, templates, what ships | building | repo public |
