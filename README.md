@@ -10,8 +10,8 @@ This repository is the **map**: how my projects relate, what each one owns, and 
 
 | | Link | What it is |
 |---|------|------------|
-| **Mesh** | [tbd-delta.vercel.app](https://tbd-delta.vercel.app/) | Felt rooms — problems, identity, projects, connection |
-| **Footnotes** | [tbd-delta.vercel.app/wiki](https://tbd-delta.vercel.app/wiki) | Concepts from reading, distilled for strangers |
+| **Mesh** | [angelguirao.com](https://angelguirao.com/) | Felt rooms — problems, identity, projects, connection |
+| **Footnotes** | [angelguirao.com/wiki](https://angelguirao.com/wiki) | Concepts from reading, distilled for strangers |
 | **Holzen** | [holzen.app](https://holzen.app) | Shipped product — pause before capital moves |
 
 The mesh is how it *feels*. Footnotes are what I *know* in public. Holzen is what I *ship* to users.
@@ -79,7 +79,7 @@ Personal agent on OpenClaw — routes attention across memory, reading, and the 
 
 ### Showing
 
-**tbd** · `tbd/` · *active* · [mesh →](https://tbd-delta.vercel.app/)  
+**tbd** · `tbd/` · *active* · [mesh →](https://angelguirao.com/)  
 This exhibition — felt rooms for problems, identity, and connection; the public layer on top of what folio knows.
 
 ### Shipping
@@ -105,5 +105,5 @@ Self-custody Bitcoin infrastructure — compose, regtest, and runbooks for runni
 
 ## Connect
 
-- [Mesh](https://tbd-delta.vercel.app/) · [Footnotes](https://tbd-delta.vercel.app/wiki) · [Holzen](https://holzen.app)
+- [Mesh](https://angelguirao.com/) · [Footnotes](https://angelguirao.com/wiki) · [Holzen](https://holzen.app)
 - [LinkedIn](https://linkedin.com/in/angelguirao) · [GitHub](https://github.com/Angelguirao)

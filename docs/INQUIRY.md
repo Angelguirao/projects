@@ -87,8 +87,8 @@ Footnotes (`/wiki`) ship any wiki page with `publish: true`, including under `se
 
 | Surface | URL | What visitors see |
 |---------|-----|-------------------|
-| Mesh | [tbd-delta.vercel.app](https://tbd-delta.vercel.app/) | Public inquiry + stack graph + felt rooms |
-| Footnotes | [/wiki](https://tbd-delta.vercel.app/wiki) | Published concepts only |
+| Mesh | [angelguirao.com](https://angelguirao.com/) | Public inquiry + stack graph + felt rooms |
+| Footnotes | [/wiki](https://angelguirao.com/wiki) | Published concepts only |
 | Inner path | owner cookie on same site | Full folio, inner wiki, PersonalOS `/os` — not advertised |
 
 Repo visibility on GitHub is independent. This meta-repo documents the map; sibling repos may stay private while surfaces stay live.
