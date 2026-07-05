@@ -79,6 +79,8 @@ Footnotes (`/wiki`) ship any wiki page with `publish: true`, including under `se
 4. Private stays private until you flip `publish: true`.
 5. Exhibition stays handcrafted — Claw does not auto-build mesh TSX from Telegram.
 
+**Format constitution:** [`brain/wiki/self/inquiry/constitution.md`](https://github.com/Angelguirao/brain/blob/master/wiki/self/inquiry/constitution.md) — how to write questions, bets, experiments, metrics.
+
 ---
 
 ## Surfaces
