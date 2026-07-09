@@ -2,7 +2,7 @@
 
 **Angel Guirao** — product-minded full-stack engineer building tools for **knowing, deciding, and shipping** without outsourcing judgment to platforms or copilots.
 
-This repository is the **map**: how my projects relate, what each one owns, and where to look first. Nine sibling repos beside this folder — not a monorepo. **Compose mature open source. Own the glue.**
+This repository is the **map**: how my projects relate, what each one owns, and where to look first. Ten sibling repos beside this folder — not a monorepo. **Compose mature open source. Own the glue.**
 
 ---
 
@@ -13,8 +13,9 @@ This repository is the **map**: how my projects relate, what each one owns, and 
 | **Mesh** | [angelguirao.com](https://angelguirao.com/) | Felt rooms — problems, identity, projects, connection |
 | **Footnotes** | [angelguirao.com/wiki](https://angelguirao.com/wiki) | Concepts from reading, distilled for strangers |
 | **Holzen** | [holzen.app](https://holzen.app) | Shipped product — pause before capital moves |
+| **AI-Native Product Building** | [handbook](https://ai-native-product-building.vercel.app) | Living handbook — decisions for building with AI |
 
-The mesh is how it *feels*. Footnotes are what I *know* in public. Holzen is what I *ship* to users.
+The mesh is how it *feels*. Footnotes are what I *know* in public. Holzen is what I *ship* to users. The handbook is what I *teach*.
 
 ---
 
@@ -81,6 +82,9 @@ Personal agent on OpenClaw — routes attention across memory, reading, and the 
 
 **tbd** · `tbd/` · *active* · [mesh →](https://angelguirao.com/)  
 This exhibition — felt rooms for problems, identity, and connection; the public layer on top of what folio knows.
+
+**AI-Native Product Building** · `ai-native-product-building/` · *active* · [handbook →](https://ai-native-product-building.vercel.app)  
+Living handbook — decision frameworks for building products when AI changes every step. Chapters in MDX; drafts start in brain.
 
 ### Shipping
 
