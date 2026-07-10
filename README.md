@@ -109,5 +109,5 @@ Self-custody Bitcoin infrastructure — compose, regtest, and runbooks for runni
 
 ## Connect
 
-- [Mesh](https://angelguirao.com/) · [Footnotes](https://angelguirao.com/wiki) · [Holzen](https://holzen.app)
-- [LinkedIn](https://linkedin.com/in/angelguirao) · [GitHub](https://github.com/Angelguirao)
+- [Mesh](https://angelguirao.com/) · [Projects room](https://angelguirao.com/?room=projects) · [Footnotes](https://angelguirao.com/wiki) · [Holzen](https://holzen.app)
+- [LinkedIn](https://linkedin.com/in/angelguirao) · [GitHub profile](https://github.com/Angelguirao)
