@@ -12,9 +12,11 @@ The pivot is not abandonment — it is **correct ownership**:
 
 | Hunger | Owner | Surface |
 |--------|-------|---------|
-| Always-on personal AI | **personal-agent** (Claw / OpenClaw) | Telegram, channels, cron |
+| Always-on personal AI | **personal-agent** (Claw / OpenClaw) | Telegram, VPS crons |
+| Agent specs (portable) | **agents** | GitHub — sync → OpenClaw workspace |
+| Desk inquiry + inner folio | **personal-agent** (PersonalOS) | [os.angelguirao.com](https://os.angelguirao.com) |
 | What you know | **brain** | wiki, search, compile, footnotes |
-| How it feels in public | **tbd** | mesh `/`, footnotes `/wiki` |
+| How it feels in public | **tbd** | mesh `/`, footnotes `/wiki` — exhibition only |
 | What you read | **library** | Calibre → brain stubs |
 | What you ship | **holzen** | product, users, billing |
 | How ventures get work | **dispatch** + **venture-builder** | gates, dispatch, webhooks |
@@ -73,4 +75,4 @@ flowchart LR
 | 2026-06-21 | LifeOS → legacy; brain + OpenClaw pivot |
 | 2026-06-22 | Meta-repo `Angelguirao/projects`; Telegram daily driver |
 | 2026-06-22 | LifeOS Premium indexed; personal AI = personal-agent |
-| 2026-06-22 | Creative loop: capture → brain / memory / mesh |
+| 2026-07-10 | PersonalOS on `os.angelguirao.com`; tbd exhibition-only; **agents** repo for portable specs |

@@ -11,6 +11,7 @@ This repository is the **map**: how my projects relate, what each one owns, and 
 | | Link | What it is |
 |---|------|------------|
 | **Mesh** | [angelguirao.com](https://angelguirao.com/) | Felt rooms — problems, identity, projects, connection |
+| **PersonalOS** | [os.angelguirao.com](https://os.angelguirao.com) | Owner desk — inquiry loop, inner wiki (private) |
 | **Footnotes** | [angelguirao.com/wiki](https://angelguirao.com/wiki) | Concepts from reading, distilled for strangers |
 | **Holzen** | [holzen.app](https://holzen.app) | Shipped product — pause before capital moves |
 | **AI-Native Product Building** | [handbook](https://ai-native-product-building.vercel.app) | Living handbook — decisions for building with AI |
@@ -32,8 +33,10 @@ flowchart TB
   end
 
   subgraph decide["Deciding"]
+    AG[agents · specs]
     ST[steward · personal-agent]
     FOL <--> ST
+    AG --> ST
   end
 
   subgraph show["Showing"]
@@ -75,13 +78,16 @@ Home for books and PDFs that feed folio — keep what matters locally, sync the 
 
 ### Deciding
 
-**steward** · `personal-agent/` · *active*  
-Personal agent on OpenClaw — routes attention across memory, reading, and the day without handing life to a work copilot.
+**steward** · `personal-agent/` · *active* · [PersonalOS →](https://os.angelguirao.com)  
+OpenClaw on VPS, PersonalOS on Vercel — routes attention across memory, folio, and the day.
+
+**agents** · `agents/` · *active*  
+Portable agent specs — steward identity, Career Scout desk agent; adapters sync to runtimes.
 
 ### Showing
 
 **tbd** · `tbd/` · *active* · [mesh →](https://angelguirao.com/)  
-This exhibition — felt rooms for problems, identity, and connection; the public layer on top of what folio knows.
+Public exhibition — mesh rooms and footnotes. Owner cockpit lives on PersonalOS (`/os` redirects).
 
 **AI-Native Product Building** · `ai-native-product-building/` · *active* · [handbook →](https://ai-native-product-building.vercel.app)  
 Living handbook — decision frameworks for building products when AI changes every step. Chapters in MDX; drafts start in brain.
