@@ -89,9 +89,9 @@ Footnotes (`/wiki`) ship any wiki page with `publish: true`, including under `se
 |---------|-----|-------------------|
 | Mesh | [angelguirao.com](https://angelguirao.com/) | Public inquiry + stack graph + felt rooms |
 | Footnotes | [/wiki](https://angelguirao.com/wiki) | Published concepts only |
-| PersonalOS | [os.angelguirao.com](https://os.angelguirao.com/os) | Owner cockpit — inquiry loop, inner wiki (passphrase) |
-| Inner path on mesh | owner cookie (`.angelguirao.com`) | Private folio badges on mesh; links redirect to PersonalOS |
+| Owner inquiry | *not linked publicly* | Private cockpit — inquiry loop, inner wiki (passphrase). URL omitted from mesh and GitHub. |
+| Inner path on mesh | owner cookie (`.angelguirao.com`) | Private folio badges on mesh; guest hits on `/os` or `/wiki/inner` redirect away |
 
-Mesh `/os` and `/wiki/inner` **308 redirect** to PersonalOS. Agent specs live in [`agents`](https://github.com/Angelguirao/agents) (private); runtimes in [`personal-agent`](https://github.com/Angelguirao/personal-agent).
+Agent specs live in [`agents`](https://github.com/Angelguirao/agents) (private); runtimes in [`personal-agent`](https://github.com/Angelguirao/personal-agent).
 
 Repo visibility on GitHub is independent. This meta-repo documents the map; sibling repos may stay private while surfaces stay live.

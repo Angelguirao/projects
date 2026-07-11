@@ -14,7 +14,7 @@ The pivot is not abandonment — it is **correct ownership**:
 |--------|-------|---------|
 | Always-on personal AI | **personal-agent** (Claw / OpenClaw) | Telegram, VPS crons |
 | Agent specs (portable) | **agents** | GitHub — sync → OpenClaw workspace |
-| Desk inquiry + inner folio | **personal-agent** (PersonalOS) | [os.angelguirao.com](https://os.angelguirao.com) |
+| Owner inquiry + inner folio | **personal-agent** | private — not linked on mesh or GitHub |
 | What you know | **brain** | wiki, search, compile, footnotes |
 | How it feels in public | **tbd** | mesh `/`, footnotes `/wiki` — exhibition only |
 | What you read | **library** | Calibre → brain stubs |
@@ -48,7 +48,7 @@ flowchart LR
 |--------|-------|------------|
 | "Remember this" / mood / day log | `memory/YYYY-MM-DD.md` | Claw writes |
 | Concept, article, clip worth keeping | `brain/raw/` → compile | Claw or Angel → brain pipeline |
-| Phenomenological / one-off scene | tbd **open-moment** | Angel + Cursor in tbd repo |
+| Phenomenological / one-off scene | tbd **open-moment** | Handcrafted in tbd repo |
 | Durable concept worth a room | `brain/exhibits.yaml` → mesh room | Angel in tbd |
 
 **Claw routes; Claw does not auto-build mesh TSX from Telegram.** Exhibition stays handcrafted and precious.
@@ -75,4 +75,4 @@ flowchart LR
 | 2026-06-21 | LifeOS → legacy; brain + OpenClaw pivot |
 | 2026-06-22 | Meta-repo `Angelguirao/projects`; Telegram daily driver |
 | 2026-06-22 | LifeOS Premium indexed; personal AI = personal-agent |
-| 2026-07-10 | PersonalOS on `os.angelguirao.com`; tbd exhibition-only; **agents** repo for portable specs |
+| 2026-07-10 | Owner inquiry UI (private); tbd exhibition-only; **agents** repo for portable specs |

@@ -11,7 +11,6 @@ This repository is the **map**: how my projects relate, what each one owns, and 
 | | Link | What it is |
 |---|------|------------|
 | **Mesh** | [angelguirao.com](https://angelguirao.com/) | Felt rooms — problems, identity, projects, connection |
-| **PersonalOS** | [os.angelguirao.com](https://os.angelguirao.com) | Owner desk — inquiry loop, inner wiki (private) |
 | **Footnotes** | [angelguirao.com/wiki](https://angelguirao.com/wiki) | Concepts from reading, distilled for strangers |
 | **Holzen** | [holzen.app](https://holzen.app) | Shipped product — pause before capital moves |
 | **AI-Native Product Building** | [handbook](https://ai-native-product-building.vercel.app) | Living handbook — decisions for building with AI |
@@ -78,16 +77,19 @@ Home for books and PDFs that feed folio — keep what matters locally, sync the 
 
 ### Deciding
 
-**steward** · `personal-agent/` · *active* · [PersonalOS →](https://os.angelguirao.com)  
-OpenClaw on VPS, PersonalOS on Vercel — routes attention across memory, folio, and the day.
+**steward** · `personal-agent/` · *active* · *private repo*  
+Always-on life agent — OpenClaw on VPS, Telegram pocket; routes attention across memory, folio, and the day. Owner inquiry UI stays off the public map.
 
-**agents** · `agents/` · *active*  
-Portable agent specs — steward identity, Career Scout desk agent; adapters sync to runtimes.
+**agents** · `agents/` · *active* · *private repo*  
+Portable agent specs — identity, skills, routing; adapters sync to cloud and local runtimes.
+
+**vocation-desk** · `vocation-desk/` · *active*  
+Evidence-first apply pipeline — pools, tailored PDFs, status export; Claw nudges on Telegram.
 
 ### Showing
 
 **tbd** · `tbd/` · *active* · [mesh →](https://angelguirao.com/)  
-Public exhibition — mesh rooms and footnotes. Owner cockpit lives on PersonalOS (`/os` redirects).
+Public exhibition — mesh rooms and footnotes only. Private owner surfaces redirect out of guest view.
 
 **AI-Native Product Building** · `ai-native-product-building/` · *active* · [handbook →](https://ai-native-product-building.vercel.app)  
 Living handbook — decision frameworks for building products when AI changes every step. Chapters in MDX; drafts start in brain.
