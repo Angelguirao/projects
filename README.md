@@ -88,6 +88,9 @@ Portable agent specs — **cloud runtimes only** (VPS, Vercel). Specialists are 
 **vocation-desk** · `vocation-desk/` · *active*  
 Evidence-first apply pipeline (career-scout engine) — VPS cron + PersonalOS `/os/career`. No local agent runtime.
 
+**glucose-rhythm** · `glucose-rhythm/` · *active* · *local git*  
+Weekly TIR and body rhythm export — VPS Sunday cron + PersonalOS `/os/body`. Personal health data stays gitignored.
+
 ### Showing
 
 **tbd** · `tbd/` · *active* · [mesh →](https://angelguirao.com/)  
