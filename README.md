@@ -17,6 +17,8 @@ This repository is the **map**: how my projects relate, what each one owns, and 
 
 The mesh is how it *feels*. Footnotes are what I *know* in public. Holzen is what I *ship* to users. The handbook is what I *teach*.
 
+**How code should look from the inside:** holzen’s [application architecture](https://github.com/Angelguirao/holzen/blob/master/docs/fundamentals/holzen-application-architecture.md) is the product reference. Stack constitution and repo seams live in private/local docs (`docs/`, `brain/BOUNDARIES.md`) — not published from this repo.
+
 ---
 
 ## The through-line
