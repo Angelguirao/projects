@@ -79,8 +79,8 @@ Home for books and PDFs that feed folio — keep what matters locally, sync the 
 
 ### Deciding
 
-**steward** · `personal-agent/` · *active* · *private repo*  
-Always-on life agent — OpenClaw on VPS, Telegram pocket; routes attention across memory, folio, and the day. Owner inquiry UI stays off the public map.
+**steward** · `personal-agent/` · *active* · *private repo* · [PersonalOS →](https://os.angelguirao.com/os)  
+Always-on life agent — OpenClaw on VPS, Telegram pocket; routes attention across memory, folio, and the day. Owner desk and knowledge live on PersonalOS only.
 
 **agents** · `agents/` · *active* · *private repo*  
 Portable agent specs — identity, skills, routing; adapters sync to cloud and local runtimes.
@@ -91,7 +91,7 @@ Evidence-first apply pipeline — pools, tailored PDFs, status export; Claw nudg
 ### Showing
 
 **tbd** · `tbd/` · *active* · [mesh →](https://angelguirao.com/)  
-Public exhibition — mesh rooms and footnotes only. Private owner surfaces redirect out of guest view.
+Public exhibition — mesh rooms and footnotes only. `/os` and `/wiki/inner` redirect to PersonalOS.
 
 **AI-Native Product Building** · `ai-native-product-building/` · *active* · [handbook →](https://ai-native-product-building.vercel.app)  
 Living handbook — decision frameworks for building products when AI changes every step. Chapters in MDX; drafts start in brain.
