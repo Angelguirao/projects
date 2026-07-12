@@ -80,13 +80,13 @@ Home for books and PDFs that feed folio — keep what matters locally, sync the 
 ### Deciding
 
 **steward** · `personal-agent/` · *active* · *private repo* · [PersonalOS →](https://os.angelguirao.com/os)  
-Always-on life agent — OpenClaw on VPS, Telegram pocket; routes attention across memory, folio, and the day. Owner desk and knowledge live on PersonalOS only.
+Always-on **steward** on VPS — **PersonalOS** is the primary surface (desks, feed, chat). Telegram is pocket capture overflow.
 
 **agents** · `agents/` · *active* · *private repo*  
-Portable agent specs — identity, skills, routing; adapters sync to cloud and local runtimes.
+Portable agent specs — **cloud runtimes only** (VPS, Vercel). Specialists are background engines; you talk to **steward** on PersonalOS.
 
 **vocation-desk** · `vocation-desk/` · *active*  
-Evidence-first apply pipeline — pools, tailored PDFs, status export; Claw nudges on Telegram.
+Evidence-first apply pipeline (career-scout engine) — VPS cron + PersonalOS `/os/career`. No local agent runtime.
 
 ### Showing
 
