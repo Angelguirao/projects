@@ -23,7 +23,7 @@ The mesh is how it *feels*. Footnotes are what I *know* in public. Holzen is wha
 
 ## The through-line
 
-I read and clip. Ideas compile into a wiki (**folio**). A personal agent (**steward**) routes attention across the day. Selected work becomes exhibition on the mesh (**tbd**). Products that earn users get their own repo (**holzen**). Experiments start in a sandbox (**bench**) and graduate or die. Open source gets composed; the seams between repos are mine.
+I read and clip. Ideas compile into a wiki (**folio**). **PersonalOS** is my AI personal operating system — steward chat, domain desks, inquiry loops, scheduled agent work, and handoffs in one place. Selected work becomes exhibition on the mesh (**tbd**). Products that earn users get their own repo (**holzen**). Experiments start in a sandbox (**bench**) and graduate or die. Open source gets composed; the seams between repos are mine.
 
 ```mermaid
 flowchart TB
@@ -33,11 +33,13 @@ flowchart TB
     LIB --> FOL
   end
 
-  subgraph decide["Deciding"]
+  subgraph decide["Deciding · AI OS"]
+    OS[PersonalOS · personal-agent]
     AG[agents · specs]
-    ST[steward · personal-agent]
-    FOL <--> ST
-    AG --> ST
+    ST[steward · conversational agent]
+    FOL <--> OS
+    AG --> OS
+    OS --> ST
   end
 
   subgraph show["Showing"]
@@ -56,12 +58,12 @@ flowchart TB
     LAB[bench · lab]
     MON[anchor · money]
     LAB --> FOL
-    LAB --> ST
+    LAB --> OS
     MON --> FOL
   end
 ```
 
-**Reading in** → **folio** holds what's true enough → **steward** routes the day → **tbd** exhibits what earns visibility → **holzen** (and future ventures) ship to the world. **bench** tries OSS first; **relay** and **charter** connect venture work.
+**Reading in** → **folio** holds what's true enough → **PersonalOS** runs the AI stack (steward, desks, loops, specialists) → **tbd** exhibits what earns visibility → **holzen** (and future ventures) ship to the world. **bench** tries OSS first; **relay** and **charter** connect venture work.
 
 ---
 
@@ -77,19 +79,22 @@ Markdown wiki for what I read and think — capture, search, compile, publish fo
 **codex** · `library/` · *building*  
 Home for books and PDFs that feed folio — keep what matters locally, sync the rest into notes.
 
-### Deciding
-
-**steward** · `personal-agent/` · *active* · *private repo* · [PersonalOS →](https://os.angelguirao.com/os)  
-Always-on **steward** on VPS — **PersonalOS** is the primary surface (desks, feed, chat). Telegram is pocket capture overflow.
+### Deciding · AI operating system
 
 **agents** · `agents/` · *active* · *private repo*  
-Portable agent specs — **cloud runtimes only** (VPS, Vercel). Specialists are background engines; you talk to **steward** on PersonalOS.
+**Portable AI substrate** — agent specs, handoff contract, rulebook. Pairs with `personal-agent/shared/` (memory tiers, routing). Reusable outside LifeOS; holzen uses patterns, not Angel's folio.
+
+**PersonalOS** · `personal-agent/` · *active* · *private repo* · [os.angelguirao.com/os →](https://os.angelguirao.com/os)  
+**AI OS product** — steward chat, desks, inquiry loop, feed, crons, handoffs. Implements the substrate for one principal. Same repo holds LifeOS **instance data** (`openclaw/`). LifeOS = this + brain + ops — a named instance, not the only possible AI OS.
+
+**steward** (Claw) · `agents/specs/steward/` · runtime in PersonalOS  
+The one conversational agent inside the OS — inquiry, capture, synthesis.
 
 **vocation-desk** · `vocation-desk/` · *active*  
-Evidence-first apply pipeline (career-scout engine) — VPS cron + PersonalOS `/os/career`. No local agent runtime.
+Career-scout **ops engine** — scan, score, PDF, export. Trigger.dev (VPS parallel) + PersonalOS `/os/career`. No standalone agent UI.
 
 **glucose-rhythm** · `glucose-rhythm/` · *active* · *local git*  
-Weekly TIR and body rhythm export — VPS Sunday cron + PersonalOS `/os/body`. Personal health data stays gitignored.
+Glucose-manager **ops engine** — TIR rollup, Nightscout pull, export. Trigger.dev (VPS parallel) + PersonalOS `/os/body`. Health data stays gitignored.
 
 ### Showing
 
