@@ -2,7 +2,9 @@
 
 **Angel Guirao** — product-minded full-stack engineer building tools for **knowing, deciding, and shipping** without outsourcing judgment to platforms or copilots.
 
-This repository is the **map**: how my projects relate, what each one owns, and where to look first. Ten sibling repos beside this folder — not a monorepo. **Compose mature open source. Own the glue.**
+This repository is the **map**: how my projects relate, what each one owns, and where to look first. Sibling repos beside this folder — not a monorepo. **Compose mature open source. Own the glue.**
+
+**July 2026 consolidation:** the AI OS stack (`agents`, career/body/venture ops, dispatch, instance data) now lives in one repo — **`personal-agent/`** ([personal-ai-os](https://github.com/Angelguirao/personal-ai-os)). Legacy sibling checkouts and GitHub repos for those pieces are removed.
 
 ---
 
@@ -34,9 +36,9 @@ flowchart TB
   end
 
   subgraph decide["Deciding · AI OS"]
-    OS[PersonalOS · personal-agent]
-    AG[agents · specs]
-    ST[steward · conversational agent]
+    OS[PersonalOS · personal-ai-os]
+    AG[agents · substrate · ops]
+    ST[steward · instance]
     FOL <--> OS
     AG --> OS
     OS --> ST
@@ -49,8 +51,8 @@ flowchart TB
 
   subgraph ship["Shipping"]
     HOL[holzen]
-    CHR[charter · venture-builder]
-    REL[relay · dispatch]
+    CHR[charter · ops/ventures/constitution]
+    REL[relay · ops/ventures/engine]
     CHR --> REL --> HOL
   end
 
@@ -81,20 +83,25 @@ Home for books and PDFs that feed folio — keep what matters locally, sync the 
 
 ### Deciding · AI operating system
 
-**agents** · `agents/` · *active* · *private repo*  
-**Portable AI substrate** — agent specs, handoff contract, rulebook. Pairs with `personal-agent/shared/` (memory tiers, routing). Reusable outside LifeOS; holzen uses patterns, not Angel's folio.
+**PersonalOS** · `personal-agent/` · *active* · [personal-ai-os](https://github.com/Angelguirao/personal-ai-os) · [os.angelguirao.com/os →](https://os.angelguirao.com/os)  
+**One repo** for the AI personal operating system — product, agents, substrate, domain ops, and LifeOS instance data.
 
-**PersonalOS** · `personal-agent/` · *active* · *private repo* · [os.angelguirao.com/os →](https://os.angelguirao.com/os)  
-**AI OS product** — steward chat, desks, inquiry loop, feed, crons, handoffs. Implements the substrate for one principal. Same repo holds LifeOS **instance data** (`openclaw/`). LifeOS = this + brain + ops — a named instance, not the only possible AI OS.
+| Path inside `personal-agent/` | Role |
+|-------------------------------|------|
+| `personalos/` | OS product — desks, steward chat, loops, crons |
+| `agents/` | Agent specs, adapters, implementations |
+| `substrate/` | Portable rules — routing, memory tiers |
+| `ops/career/` | Career-scout engine — scan, score, PDF, export |
+| `ops/body/` | Glucose-manager engine — TIR, Nightscout, export |
+| `ops/ventures/constitution/` | Venture charter — gates, templates, registry |
+| `ops/ventures/engine/` | Dispatch — venture runs, webhooks, cycles |
+| `instance/` | LifeOS instance — telos, memory, skills, handoffs |
+| `trigger/` | Trigger.dev scheduled tasks |
 
 **steward** (Claw) · `agents/specs/steward/` · runtime in PersonalOS  
-The one conversational agent inside the OS — inquiry, capture, synthesis.
+The conversational agent inside the OS — inquiry, capture, synthesis.
 
-**vocation-desk** · `vocation-desk/` · *active*  
-Career-scout **ops engine** — scan, score, PDF, export. Trigger.dev (VPS parallel) + PersonalOS `/os/career`. No standalone agent UI.
-
-**glucose-rhythm** · `glucose-rhythm/` · *active* · *local git*  
-Glucose-manager **ops engine** — TIR rollup, Nightscout pull, export. Trigger.dev (VPS parallel) + PersonalOS `/os/body`. Health data stays gitignored.
+**LifeOS** = personal-ai-os + **folio** (`brain/`). Holzen uses patterns from the substrate, not Angel's private folio.
 
 ### Showing
 
@@ -109,11 +116,7 @@ Living handbook — decision frameworks for building products when AI changes ev
 **holzen** · `holzen/` · *active* · [holzen.app →](https://holzen.app)  
 Deliberate friction before capital moves — a ritual that keeps investor decisions human-sized.
 
-**charter** · `venture-builder/` · *building*  
-Constitution for side ventures — gates, templates, and rules for what gets built, promoted, or killed.
-
-**relay** · `dispatch/` · *building*  
-Background jobs and webhooks for repeatable work — product cycles, agent maintenance, venture ops.
+Venture **charter** and **relay** (dispatch) live in `personal-agent/ops/ventures/` — see table above.
 
 ### Proving
 
