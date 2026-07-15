@@ -6,6 +6,16 @@ This repository is the **map**: how my projects relate, what each one owns, and 
 
 **July 2026 consolidation:** the AI OS stack (`agents`, career/body/venture ops, dispatch, instance data) now lives in one repo — **`personal-agent/`** ([personal-ai-os](https://github.com/Angelguirao/personal-ai-os)). Legacy sibling checkouts and GitHub repos for those pieces are removed.
 
+### Git workflow (staging first)
+
+| Repo | Production | Integration | Flow |
+|------|------------|-------------|------|
+| **holzen** | `main` | `staging` | `feature/*` → `staging` → `main` · [branch model](https://github.com/Angelguirao/holzen/blob/main/docs/ops/branch-model.md) |
+| **personal-ai-os** | `master` | `staging` | `feature/*` → `staging` → `master` · [deploy/BRANCH-MODEL.md](personal-agent/deploy/BRANCH-MODEL.md) |
+| **brain**, **tbd** | `master` | — | `feature/*` → PR → `master` |
+
+Product and venture work starts on **feature branches**, merges to **staging**, smoke-tests, then promotes to production. Supabase **holzen-staging** (database) is not the same as git **`staging`** — see [VENTURE-DESK.md](personal-agent/deploy/VENTURE-DESK.md).
+
 ---
 
 ## Start here
