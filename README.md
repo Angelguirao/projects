@@ -8,12 +8,12 @@ This repository is the **map**: how my projects relate, what each one owns, and 
 
 ### Git workflow
 
+**Product changes (holzen):** push to **staging** → test → if good, **production** (`main`). Default for venture work; skip only when trivial or urgent (see [stack policy](personal-agent/deploy/BRANCH-MODEL.md)).
+
 | Repo | Flow |
 |------|------|
-| **holzen** (ventures with users) | `feature/*` → **`staging`** (smoke) → **`main`** (prod ship) · [branch model](https://github.com/Angelguirao/holzen/blob/main/docs/ops/branch-model.md) |
-| **personal-ai-os**, **brain**, **tbd** | Direct to **`master`** — early-stage operator infra · [stack policy](personal-agent/deploy/BRANCH-MODEL.md) |
-
-Venture experiments **finish on holzen production**, not on git staging. Supabase **holzen-staging** (database) is a separate axis — see [VENTURE-DESK.md](personal-agent/deploy/VENTURE-DESK.md).
+| **holzen** (ventures with users) | `feature/*` → **`staging`** → test → **`main`** · [branch model](https://github.com/Angelguirao/holzen/blob/main/docs/ops/branch-model.md) |
+| **personal-ai-os**, **brain**, **tbd** | Direct to **`master`** — early-stage operator infra |
 
 ---
 
