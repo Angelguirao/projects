@@ -38,7 +38,36 @@ Most of this stays private. It exists so the public work has a spine.
 
 I read → notes land in the wiki → some ideas become public footnotes or handbook chapters → products that earn users (like Holzen) get their own home. The AI OS helps me run the private side. The sandbox is where experiments live or die before they graduate.
 
-```text
-reading → wiki → public writing / products
-              ↘ private AI workspace
+```mermaid
+flowchart TB
+  subgraph know["Knowing"]
+    LIB[codex · reading library]
+    FOL[folio · personal wiki]
+    LIB --> FOL
+  end
+
+  subgraph decide["Deciding"]
+    OS[PersonalOS · private AI workspace]
+    FOL <--> OS
+  end
+
+  subgraph show["Showing"]
+    SITE[angelguirao.com · rooms + footnotes]
+    BOOK[AI-Native Product Building · handbook]
+    FOL --> SITE
+    FOL --> BOOK
+  end
+
+  subgraph ship["Shipping"]
+    HOL[holzen · product]
+    OS --> HOL
+  end
+
+  subgraph prove["Proving"]
+    LAB[bench · experiment sandbox]
+    MON[anchor · bitcoin tooling]
+    LAB --> FOL
+    LAB --> OS
+    MON --> FOL
+  end
 ```
