@@ -20,6 +20,8 @@ The mesh is how it *feels*. Footnotes are what I *know* in public. Holzen is wha
 
 **How code should look from the inside:** holzen’s [application architecture](holzen/docs/fundamentals/holzen-application-architecture.md) is the product reference. Stack constitution and repo seams live in local docs (`docs/`, `brain/BOUNDARIES.md`) — not published from this repo.
 
+**What LifeOS is aiming at:** [docs/COGNITIVE-OS.md](docs/COGNITIVE-OS.md) — personal cognitive OS (refinery + world model), not “an agent app” or a Cerebras-style doc KB. Ownership map: [docs/VISION.md](docs/VISION.md). Platform vs runtime: [docs/PLATFORM-vs-RUNTIME.md](docs/PLATFORM-vs-RUNTIME.md).
+
 ---
 
 ## The through-line
