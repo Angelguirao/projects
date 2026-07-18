@@ -14,7 +14,7 @@ These are the ones a stranger can open today:
 |--|--|
 | **[Holzen](https://holzen.app)** | A practice for investors: pause when markets get loud, before moving capital |
 | **[AI-Native Product Building](https://ai-native-product-building.vercel.app)** | A living handbook on how AI changes product decisions |
-| **[AIE Sessions](https://github.com/Angelguirao/aie-sessions)** | Open library of AI Engineer talks — catalogued and summarized so you can decide what to watch |
+| **[AIE Sessions](https://aie-sessions.vercel.app)** | Open library of AI Engineer talks — catalogued and summarized so you can decide what to watch |
 | **[angelguirao.com](https://angelguirao.com)** | Public site — interactive rooms and short footnotes from my reading |
 
 ---
