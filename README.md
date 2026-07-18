@@ -14,6 +14,7 @@ These are the ones a stranger can open today:
 |--|--|
 | **[Holzen](https://holzen.app)** | A practice for investors: pause when markets get loud, before moving capital |
 | **[AI-Native Product Building](https://ai-native-product-building.vercel.app)** | A living handbook on how AI changes product decisions |
+| **[AIE Sessions](https://github.com/Angelguirao/aie-sessions)** | Open library of AI Engineer talks — catalogued and summarized so you can decide what to watch |
 | **[angelguirao.com](https://angelguirao.com)** | Public site — interactive rooms and short footnotes from my reading |
 
 ---
@@ -27,8 +28,6 @@ Most of this stays private. It exists so the public work has a spine.
 **Reading library** (*codex*) — Books and PDFs on my machine, linked into the wiki.
 
 **Personal AI OS** (*PersonalOS*) — A private workspace where I chat with an assistant, run recurring jobs, and keep career, health, and venture work in one place — not a product for other people.
-
-**AIE Sessions** (*aie-sessions*) — Living library of AI Engineer talks: catalogued, caption-extracted, and rewritten for this stack (feeds the handbook and wiki).
 
 **Experiment sandbox** (*bench*) — A place to try open-source tools before adopting them for real.
 
