@@ -28,6 +28,8 @@ Most of this stays private. It exists so the public work has a spine.
 
 **Personal AI OS** (*PersonalOS*) — A private workspace where I chat with an assistant, run recurring jobs, and keep career, health, and venture work in one place — not a product for other people.
 
+**AIE Sessions** (*aie-sessions*) — Living library of AI Engineer talks: catalogued, caption-extracted, and rewritten for this stack (feeds the handbook and wiki).
+
 **Experiment sandbox** (*bench*) — A place to try open-source tools before adopting them for real.
 
 **Bitcoin node tooling** (*anchor*) — Guides and setup for running my own Bitcoin infrastructure.
@@ -54,8 +56,11 @@ flowchart TB
   subgraph show["Showing"]
     SITE[angelguirao.com · rooms + footnotes]
     BOOK[AI-Native Product Building · handbook]
+    AIE[aie-sessions · conference library]
     FOL --> SITE
     FOL --> BOOK
+    AIE --> FOL
+    AIE --> BOOK
   end
 
   subgraph ship["Shipping"]
