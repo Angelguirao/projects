@@ -27,7 +27,7 @@ Most of this stays private. It exists so the public work has a spine.
 
 **Reading library** (*codex*) — Books and PDFs on my machine, linked into the wiki.
 
-**Personal AI OS** (*PersonalOS*) — A private workspace where I chat with an assistant, run recurring jobs, and keep career, health, and venture work in one place — not a product for other people.
+**Personal AI OS** (*PersonalOS* / *LifeOS*) — A private distributed workspace: desks on Vercel, wakes on Trigger, life graphs on LangSmith, coding on Fly, ledger on Supabase — career, health, and venture work in one system, not a product for other people. ([architecture](personal-agent/deploy/ARCHITECTURE.md))
 
 **Experiment sandbox** (*bench*) — A place to try open-source tools before adopting them for real.
 
